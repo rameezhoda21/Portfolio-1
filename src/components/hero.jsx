@@ -10,7 +10,7 @@ export default function Hero() {
         Hi, I'm Rameez Hoda</h1>
       <p className="mt-4 text-xl text-gray-300">
         <Typewriter
-          words={['Building futuristic UIs', 'Designing interactive systems', 'Crafting sci-fi inspired websites']}
+          words={['Crafting web experiences', 'Exploring data patterns', 'Building innovative solutions']}
           loop={true}
           cursor
           cursorStyle='_'
