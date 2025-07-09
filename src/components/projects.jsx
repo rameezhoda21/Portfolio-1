@@ -21,11 +21,11 @@ const projects = [
     tags: ['Python', 'NLP', 'Scikit-learn'],
   },
   {
-    title: 'TicTacToe',
+    title: 'Football Quiz',
     description:
-      'A simple TicTacToe game implemented using HTML, CSS, and JavaScript. Play against your friend.',
-    url: 'https://github.com/rameezhoda21/tictactoe',
-    tags: ['JavaScript', 'HTML', 'CSS'],
+      '5 categories of football quizzes. Includes a timer and score tracking with leaderboard functionality.',
+    url: 'https://football-quiz-psi.vercel.app/',
+    tags: ['React', 'TailwindCSS', 'Framer-motion'],
   },
 ];
 
