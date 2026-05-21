@@ -2,30 +2,45 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 // Project data
 const projects = [
   {
-    title: 'Kalman Filter',
+    title: 'IBA RAG Chatbot',
     description:
-      'Kalman Filter implemented using RISC-V vector ISA (RV32I). Simulated on VEER.',
-    url: 'https://github.com/RamisKamlani/Group-CAALMAN-FILTER',
-    tags: ['RISC-V', 'C', 'HDL'],
+      'A RAG-based chatbot for IBA students and faculty. Built with Streamlit for a seamless interactive experience.',
+    url: 'https://github.com/rameezhoda21/iba-rag',
+    website: 'https://iba-rag-n6ypurakcqkhcvkbjvhd8j.streamlit.app/',
+    image: '/iba rag.jfif',
+    tags: ['Python', 'Streamlit', 'RAG'],
   },
   {
-    title: 'Fake News Detector',
+    title: 'University Management System',
     description:
-      'A terminal-based tool that classifies news headlines or articles as REAL or FAKE using TF-IDF and a tuned Naive Bayes model.',
-    url: 'https://github.com/rameezhoda21/Fake-News-Detector',
-    tags: ['Python', 'NLP', 'Scikit-learn'],
+      'A comprehensive web-based University Management System to streamline academic and administrative tasks.',
+    url: 'https://github.com/aghamohsinh/Software-Project',
+    website: 'https://software-project-ashy.vercel.app/login',
+    image: '/ums.jfif',
+    tags: ['React', 'Web Development', 'Gemini API'],
   },
   {
     title: 'Football Quiz',
     description:
       '5 categories of football quizzes. Includes a timer and score tracking with leaderboard functionality.',
-    url: 'https://football-quiz-psi.vercel.app/',
+    url: 'https://github.com/rameezhoda21/football-quiz',
+    website: 'https://football-quiz-psi.vercel.app/',
+    image: '/football quiz.png',
     tags: ['React', 'TailwindCSS', 'Framer-motion'],
+  },
+  {
+    title: 'Library Management System',
+    description:
+      'A comprehensive web-based Library Management System connected to a database.',
+    url: 'https://github.com/rameezhoda21/db-project',
+    website: 'https://db-project-ktjc-git-main-rameez-hodas-projects.vercel.app/login',
+    image: '/library.png',
+    tags: ['React', 'Oracle'],
   },
 ];
 
@@ -50,6 +65,15 @@ export default function Projects() {
               key={proj.title}
               className="relative bg-zinc-900 border border-cyan-500 rounded-xl p-6 shadow-md hover:shadow-cyan-500/30 transition-transform duration-300 transform hover:-translate-y-2 backdrop-blur-md"
             >
+              {/* Project Image */}
+              <div className="mb-5 overflow-hidden rounded-lg border border-cyan-900">
+                <img 
+                  src={proj.image} 
+                  alt={`${proj.title} preview`} 
+                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
               <h3 className="text-1xl text-cyan-400 mb-5" style={{ fontFamily: '"Press Start 2P", cursive' }}>{proj.title}</h3>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -65,7 +89,18 @@ export default function Projects() {
 
               <p className="text-gray-400 mb-6">{proj.description}</p>
 
-              <div className="flex justify-end">
+              <div className="flex justify-end gap-3">
+                {proj.website && (
+                  <a
+                    href={proj.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-400 hover:text-cyan-200 transition"
+                    aria-label={`Visit ${proj.title} website`}
+                  >
+                    <FaExternalLinkAlt size={20} />
+                  </a>
+                )}
                 <a
                   href={proj.url}
                   target="_blank"

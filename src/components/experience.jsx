@@ -13,14 +13,14 @@ const experience = [
   {
     role: 'Tutor',
     company: 'Freelance',
-    period: '2024 – Present',
+    period: 'Jan 2024 – Present',
     description: 'Prepared students for O/A level exams.',
     icon: <FaChalkboardTeacher size={20} className="text-cyan-400" />,
   },
   {
     role: 'Script Writer',
     company: 'Freelance',
-    period: 'June 25 – Present',
+    period: 'June 25 – March 26',
     description: 'Wrote scripts for YouTube videos, focusing on sports and technology topics.',
     icon: <FaPenNib size={20} className="text-cyan-400" />,
   },

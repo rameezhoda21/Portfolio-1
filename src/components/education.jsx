@@ -8,14 +8,14 @@ const educationList = [
     subtitle: 'BS Computer Science',
     years: '2023 – 2027',
     grade: 'Current CGPA: 3.1',
-    achievements: ['2nd Position in ITC GameFest', 'Best Defeder Award in ISF', 'Led CS Football team to firste ever Olympiad'],
+    achievements: ['2nd Position in ITC GameFest', '2x Best Defender Award at IBA Sports Fest', 'Led CS Football team to first ever Olympiad'],
   },
   {
     title: 'Lyceum School',
     subtitle: 'A Levels – Pre-Engineering',
     years: '2021 – 2023',
     grade: 'Grades: A A A',
-    achievements: ['Football Team Captain', 'Corinthe House Captain'],
+    achievements: ['Football Team Captain', 'Corinthe House Captain', 'Sportsman of the Year'],
   },
   {
     title: 'City School',
