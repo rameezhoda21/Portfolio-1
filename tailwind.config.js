@@ -13,6 +13,15 @@ export default {
       },
       colors: {
         'overlay': 'rgba(29, 7, 7, 0.6)',
+      },
+      keyframes: {
+        scan: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100vh)' }
+        }
+      },
+      animation: {
+        scan: 'scan 3s linear infinite',
       }
     },
   },
